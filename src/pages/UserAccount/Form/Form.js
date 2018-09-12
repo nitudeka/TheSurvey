@@ -65,10 +65,12 @@ class Form extends Component {
     formIsValid: false
   }
 
+  // Handles the form button submit event
   onButtonSubmit = () => {
     this.props.edit();
   }
 
+  // Handles the on change input event
   onInputChange = (event, element) => {
     const updatedState = {...this.state.form};
     const updatedElement = {...updatedState[element]};

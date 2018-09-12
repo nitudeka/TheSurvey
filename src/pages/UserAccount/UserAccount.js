@@ -5,7 +5,7 @@ import Form from './Form/Form';
 
 class UserAccount extends React.Component {
   state = {
-    edit: false
+    edit: false // state for displaying the form
   }
 
   editChangeHandler = () => {
