@@ -13,7 +13,6 @@
 }
 
 .account__content {
-  margin: 2rem;
   width: 39rem;
   border-radius: 2px;
   background-color: #fff;
@@ -52,12 +51,6 @@
   color: rgba(0,0,0,.7);
 }
 
-.account__input-div {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
 .account__info {
   border-bottom: 1px solid rgba(0,0,0,.12);
   padding: 2rem;
@@ -77,32 +70,6 @@
   justify-content: center;
 }
 
-.account__update-button {
-  background-color: #4285f4;
-  padding: 1.34rem 3.42rem;
-  display: block;
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-  color: #fff;
-  transition: all .2s ease-out;
-  margin: 2rem auto;
-}
-
-.account__update-button:hover {
-  box-shadow: 0 7px 14px rgba(0,0,0,.2);
-  transform: translateY(-2px);
-}
-
-.account__update-button:active {
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
-  transform: translateY(-1px);
-}
-
-.account__update-button:focus {
-  outline: none;
-}
-
 .account__edit-button {
   position: absolute;
   top: -1.3rem;
@@ -110,7 +77,7 @@
 }
 
 .account__edit-svg {
-  fill: #4285f4;
+  fill: #75a902;
   transition: all .3s ease-out;
 }
 

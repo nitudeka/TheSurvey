@@ -1,10 +1,11 @@
 import React from 'react';
 import './UserAccount.css';
 import Svg from './svg';
+import Form from './Form/Form';
 
 class UserAccount extends React.Component {
   state = {
-    edit: false
+    edit: !false
   }
 
   editChangeHandler = () => {
@@ -39,20 +40,8 @@ class UserAccount extends React.Component {
                 </span>
               </div>
               :
-              <div className='account__input-div'>
-                <div className='account__input-container'>
-                  <Svg name='user' className='account__info-svg' height='20' />
-                  <input className='account__input' type='text' placeholder={this.props.name} />
-                </div>
-                <div className='account__input-container'>
-                  <Svg name='lock' className='account__info-svg' height='20' />
-                  <input className='account__input' type='text' placeholder='your new password' />
-                </div>
-                <div className='account__input-container'>
-                  <Svg name='lock' className='account__info-svg' height='20' />
-                  <input className='account__input' type='text' placeholder='repeat your password' />
-                </div>
-                <button onClick={this.editChangeHandler} className='account__update-button'>Update</button>
+              <div className='account__form'>
+                <Form edit={this.editChangeHandler} />
               </div>
             }
           </div>
@@ -63,3 +52,18 @@ class UserAccount extends React.Component {
 }
 
 export default UserAccount;
+
+
+// <div className='account__input-container'>
+//   <Svg name='user' className='account__info-svg' height='20' />
+//   <input className='account__input' type='text' placeholder={this.props.name} />
+// </div>
+// <div className='account__input-container'>
+//   <Svg name='lock' className='account__info-svg' height='20' />
+//   <input className='account__input' type='text' placeholder='your new password' />
+// </div>
+// <div className='account__input-container'>
+//   <Svg name='lock' className='account__info-svg' height='20' />
+//   <input className='account__input' type='text' placeholder='repeat your password' />
+// </div>
+// <button onClick={this.editChangeHandler} className='account__update-button'>Update</button>
