@@ -52,18 +52,3 @@ class UserAccount extends React.Component {
 }
 
 export default UserAccount;
-
-
-// <div className='account__input-container'>
-//   <Svg name='user' className='account__info-svg' height='20' />
-//   <input className='account__input' type='text' placeholder={this.props.name} />
-// </div>
-// <div className='account__input-container'>
-//   <Svg name='lock' className='account__info-svg' height='20' />
-//   <input className='account__input' type='text' placeholder='your new password' />
-// </div>
-// <div className='account__input-container'>
-//   <Svg name='lock' className='account__info-svg' height='20' />
-//   <input className='account__input' type='text' placeholder='repeat your password' />
-// </div>
-// <button onClick={this.editChangeHandler} className='account__update-button'>Update</button>
