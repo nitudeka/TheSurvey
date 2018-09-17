@@ -35,7 +35,7 @@ class Form extends Component {
       password: {
         label: 'Your new password',
         type: 'password',
-        placeholder: 'Your new password',
+        placeholder: 'Your new password (min 6)',
         value: '',
         validation: {
           required: true,
