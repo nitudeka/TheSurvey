@@ -67,6 +67,12 @@ class Form extends Component {
 
   // Handles the form button submit event
   onButtonSubmit = () => {
+    this.props.editUser(
+      { // Do not change the key names, first check 
+        name: this.state.form.name.value,
+        email: this.state.form.email.value
+      }
+    );
     this.props.edit();
   }
 

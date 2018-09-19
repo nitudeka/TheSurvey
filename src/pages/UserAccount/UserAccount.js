@@ -5,7 +5,7 @@ import Form from './Form/Form';
 
 class UserAccount extends React.Component {
   state = {
-    edit: false // state for displaying the form
+    edit: !false // state for displaying the form
   }
 
   editChangeHandler = () => {
@@ -41,7 +41,7 @@ class UserAccount extends React.Component {
               </div>
               :
               <div className='account__form'>
-                <Form edit={this.editChangeHandler} />
+                <Form editUser={this.props.editUser} edit={this.editChangeHandler} />
               </div>
             }
           </div>
